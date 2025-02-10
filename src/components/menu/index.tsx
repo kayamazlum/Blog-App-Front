@@ -43,7 +43,7 @@ const Menu = () => {
       <div
         className={`h-screen text-xl lg:hidden fixed right-0 top-0 z-50 font-medium ${
           isOpen ? "translate-x-0" : "translate-x-64"
-        } w-64 bg-white text-black dark:bg-zinc-800 dark:text-white rounded-l-3xl dark:border-zinc-300 border-l transition-transform duration-500 `}
+        } w-64 bg-white text-black dark:bg-zinc-900 dark:text-white rounded-l-3xl dark:border-zinc-300 border-l transition-transform duration-500 `}
       >
         <button
           onClick={() => setIsOpen(false)}
