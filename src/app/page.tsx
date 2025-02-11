@@ -1,3 +1,4 @@
+import AllContent from "@/components/AllContent";
 import CategoryNav from "@/components/categoryNav";
 import Header from "@/components/header";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="">
       <Header />
       <CategoryNav />
+      <AllContent />
     </div>
   );
 }
