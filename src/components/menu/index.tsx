@@ -18,12 +18,12 @@ const Menu = () => {
 
       <div className="lg:block hidden">
         <div className="flex gap-10 text-xl">
-          <span className="hover:text-yellow-400 transition-all cursor-pointer">
+          <span className="hover:text-blue duration-300 transition-all cursor-pointer">
             Home
           </span>
-          <div className="flex gap-2 justify-center items-center hover:text-yellow-400 transition-all group">
+          <div className="flex gap-2 justify-center items-center hover:text-blue duration-300 transition-all group">
             <span className="cursor-pointer ">Profile</span>
-            <span className="rounded-full border flex items-center justify-center h-8 w-8 group-hover:border-yellow-400">
+            <span className="rounded-full border flex items-center justify-center h-8 w-8 duration-300 group-hover:border-blue">
               H
             </span>
           </div>
@@ -43,7 +43,7 @@ const Menu = () => {
       <div
         className={`h-screen text-xl lg:hidden fixed right-0 top-0 z-50 font-medium ${
           isOpen ? "translate-x-0" : "translate-x-64"
-        } w-64 bg-white text-black dark:bg-zinc-900 dark:text-white rounded-l-3xl dark:border-zinc-300 border-l transition-transform duration-500 `}
+        } w-64 bg-white text-black dark:bg-dark dark:text-white rounded-l-3xl dark:border-zinc-300 border-l transition-transform duration-500 `}
       >
         <button
           onClick={() => setIsOpen(false)}
@@ -51,16 +51,16 @@ const Menu = () => {
         >
           <IoClose
             size={40}
-            className="hover:text-yellow-400 transition-all cursor-pointer"
+            className="hover:text-blue transition-all cursor-pointer"
           />
         </button>
         <div className="flex flex-col w-full justify-center items-center gap-8 mt-32">
-          <span className="hover:text-yellow-400 transition-all cursor-pointer">
+          <span className="hover:text-blue duration-300 transition-all cursor-pointer">
             Home
           </span>
-          <div className="flex gap-2 justify-center items-center hover:text-yellow-400 transition-all group">
+          <div className="flex gap-2 justify-center items-center hover:text-blue duration-300 transition-all group">
             <span className="cursor-pointer ">Profile</span>
-            <span className="rounded-full border flex items-center justify-center h-8 w-8 group-hover:border-yellow-400">
+            <span className="rounded-full border flex items-center justify-center h-8 w-8  group-hover:border-blue transition-all duration-300">
               H
             </span>
           </div>

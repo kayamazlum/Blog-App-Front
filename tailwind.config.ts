@@ -8,7 +8,15 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: "#181A2A",
+        dark2: "#242535",
+        blue: "#4B6BFB",
+        light: "#FFFFFF",
+        light2: "#E8E8EA",
+      },
+    },
   },
   plugins: [],
 } satisfies Config;

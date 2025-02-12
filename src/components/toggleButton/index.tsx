@@ -7,7 +7,7 @@ const ToggleButton = () => {
 
   return (
     <div
-      className="cursor-pointer hover:text-yellow-400 transition-all"
+      className="cursor-pointer hover:text-blue duration-300 transition-all"
       onClick={toggleTheme}
     >
       {theme === "dark" ? (
