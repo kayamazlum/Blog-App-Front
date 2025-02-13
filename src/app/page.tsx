@@ -1,5 +1,6 @@
 import AllContent from "@/components/AllContent";
 import CategoryNav from "@/components/categoryNav";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <CategoryNav />
       <AllContent />
+      <Footer />
     </div>
   );
 }

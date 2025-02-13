@@ -12,9 +12,12 @@ export default {
       colors: {
         dark: "#181A2A",
         dark2: "#242535",
+        darkultra: "#141624",
         blue: "#4B6BFB",
         light: "#FFFFFF",
         light2: "#E8E8EA",
+        lightultra: "#F6F6F7",
+        lightdark: "#DCDDDF",
       },
     },
   },

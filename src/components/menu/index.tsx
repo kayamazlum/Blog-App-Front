@@ -11,7 +11,7 @@ const Menu = () => {
     <div className="overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden block bg-gray-500 text-white px-2 py-1 bg-opacity-40 rounded-md text-2xl mr-4"
+        className="lg:hidden block bg-gray-500 text-white px-2 py-1 bg-opacity-40 rounded-md text-2xl "
       >
         ☰
       </button>
