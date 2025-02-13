@@ -1,5 +1,5 @@
 import React from "react";
-import PostCard from "../postCard";
+import PostCards from "../postCards";
 
 const AllContent = () => {
   return (
@@ -7,7 +7,7 @@ const AllContent = () => {
       <div className="w-[1200px] md:mx-8 sm:mx-4 mx-2 p-4 ">
         <div className="w-full flex flex-row">
           <div className=" w-full">
-            <PostCard />
+            <PostCards />
           </div>
         </div>
       </div>
