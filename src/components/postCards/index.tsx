@@ -5,7 +5,7 @@ const PostCards = () => {
   return (
     <div className="flex flex-col gap-8 ">
       <h1 className="text-xl font-semibold">Latest Post</h1>
-      <div className="flex flex-wrap justify-between gap-4">
+      <div className="flex flex-wrap justify-between xl:gap-4 gap-y-8">
         <PostCard />
         <PostCard />
         <PostCard />
