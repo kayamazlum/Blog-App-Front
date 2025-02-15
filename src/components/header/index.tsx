@@ -4,7 +4,7 @@ import Menu from "../menu";
 const Header = () => {
   return (
     <div className="w-full dark:bg-dark bg-light  flex justify-center">
-      <div className="w-[1200px]  flex justify-between h-16 items-center mx-4">
+      <div className="w-[1200px]  flex justify-between h-16 items-center mx-4 p-2">
         <span className="text-3xl font-bold ">BLOG</span>
         <Menu />
       </div>
