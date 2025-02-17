@@ -1,6 +1,9 @@
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const PostCard = () => {
+  const router = useRouter();
   return (
     <div className="flex flex-col xl:w-[350px] lg:w-[32%] md:w-[47%] sm:w-[48%] w-full h-[450px] justify-between border dark:border-zinc-600 p-3 items-center rounded-md gap-4">
       <div className="flex flex-col gap-2">
@@ -20,7 +23,10 @@ const PostCard = () => {
       </div>
 
       <div className="flex w-full justify-between items-center ">
-        <div className="flex gap-1 items-center">
+        <div
+          className="flex gap-1 items-center"
+          onClick={() => router.push("/user_profile")}
+        >
           <span className="rounded-full w-10 h-10 border flex items-center justify-center cursor-pointer">
             User
           </span>
