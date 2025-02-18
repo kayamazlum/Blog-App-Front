@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import ToggleButton from "../toggleButton";
 import { IoClose } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+
+  const router = useRouter();
 
   return (
     <div className="overflow-hidden">
@@ -22,7 +24,12 @@ const Menu = () => {
             Home
           </span>
           <div className="flex gap-2 justify-center items-center hover:text-blue duration-300 transition-all group">
-            <span className="cursor-pointer ">Profile</span>
+            <span
+              onClick={() => router.push("/user_profile")}
+              className="cursor-pointer "
+            >
+              My Profile
+            </span>
             <span className="rounded-full border flex items-center justify-center h-8 w-8 duration-300 group-hover:border-blue">
               H
             </span>
@@ -59,7 +66,7 @@ const Menu = () => {
             Home
           </span>
           <div className="flex gap-2 justify-center items-center hover:text-blue duration-300 transition-all group">
-            <span className="cursor-pointer ">Profile</span>
+            <span className="cursor-pointer ">My Profile</span>
             <span className="rounded-full border flex items-center justify-center h-8 w-8  group-hover:border-blue transition-all duration-300">
               H
             </span>
