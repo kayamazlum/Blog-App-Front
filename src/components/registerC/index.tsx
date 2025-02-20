@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const RegisterC = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
   return (
-    <div className="rounded-md flex flex-col py-10 px-14 bg-dark border border-blue bg-opacity-50">
+    <div className="rounded-md flex flex-col py-10 sm:px-14 px-[10%] bg-dark border border-blue bg-opacity-50">
       <div className="flex flex-col gap-4">
         <div className="w-full flex text-xl font-bold mb-4 border-b pb-2 justify-center items-center">
           <span>REGISTER</span>
@@ -54,7 +56,10 @@ const RegisterC = () => {
         </button>
         <div className="text-sm flex gap-2 mt-2">
           <span>Do you have an account?</span>
-          <span className="font-bold underline cursor-pointer hover:text-blue duration-300 transition">
+          <span
+            onClick={() => router.push("/login")}
+            className="font-bold underline cursor-pointer hover:text-blue duration-300 transition"
+          >
             Sign in now
           </span>
         </div>
